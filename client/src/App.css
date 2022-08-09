@@ -1,0 +1,74 @@
+/* 
+#100720 morado oscuro
+#31087B morado
+#FA2FB5 rosa
+#FFC23C amarillo
+ */
+
+ body {
+  background-color: #100720;
+}
+.heading {
+  position: absolute;
+  font-family: sans-serif;
+  font-size: 40px;
+  top: 10%;
+  color: #FFC23C;
+}
+div #ss{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div #hex-box{
+  border: 1px solid #31087B;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.hex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  position: relative;
+  right: 60px;
+  
+  
+}
+.hexagon{
+  margin-left: 60px;
+  position: relative;
+  background-color: #31087B;
+  width: 60px;
+  height: 100px;
+  transform: rotate(90deg);
+}
+  
+  .hexagon::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -30px;
+    width: 0;
+    height: 0;
+    border-right: 30px solid #31087B;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+  }
+
+  .hexagon::after{
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: -30px;
+    width: 0;
+    height: 0;
+    border-left: 30px solid #31087B;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+  }
+  #pair{
+    margin-left: 120px;
+  }
+
