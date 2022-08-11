@@ -1,26 +1,27 @@
 import React, {useEffect, useState} from "react";
-
+import {getData} from "../api";
+import '../App.css';
 
 function Champs() {
+    const [data, setData] = useState([])
     useEffect( () =>{
-        fetchItems();
+        async function loadData() {
+            const response = await getData();
+            setData(response.data);
+        }
+        loadData();
     }, []);
 
-    const [items, setItems] = useState([]);
-
-    const fetchItems = async() => {
-        const data = await fetch("/");
-        const items = await data.json();
-        setItems(items);
-    };
+    
     return(
-        <div>
+        <div id='champ-box'>
             {
-                items.map(items =>(
+                data.map(data =>(
                     <div>
-                        <p>{items.name}</p>
-                        <p>{items.synergy}</p>
-                        <p>{items.cost}</p>
+                        <p>{data.name}</p>
+                        <p>{data.synergy}</p>
+                        <p>{data.cost}</p>
+                        <p>{data.icon}</p>
                     </div>
                 ))
             }

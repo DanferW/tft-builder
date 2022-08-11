@@ -8,7 +8,7 @@ function App() {
     
   return (
     
-    <div id='ss'>
+    <div>
     <Heading />
     <Hexagon />
     <Champs />

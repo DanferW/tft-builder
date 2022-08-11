@@ -5,11 +5,11 @@
 #FFC23C amarillo
  */
 
- body {
+body {
   background-color: #100720;
 }
 .heading {
-  position: absolute;
+  position: relative;
   font-family: sans-serif;
   font-size: 40px;
   top: 10%;
@@ -18,13 +18,28 @@
 div #ss{
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 div #hex-box{
   border: 1px solid #31087B;
+  margin: 20px 0 20px 0;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+div #champ-box{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border: 1px solid #31087B;
+  color: #d0c0ca;
+}
+div #head-box{
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  
 }
 .hex {
   display: flex;

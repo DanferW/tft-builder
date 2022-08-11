@@ -2,7 +2,11 @@ import '../App.css';
 
 function Heading() {
     return (
-        <div class='heading'><strong>TEAMFIGHT TACTICS BUILDER</strong></div>
+        < div id='head-box'>
+            <div class='heading'>
+                <strong>TEAMFIGHT TACTICS BUILDER</strong>
+            </div>
+        </div>
     );
     
 }
