@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import {getData} from "../api";
 import '../App.css';
 
+
 function Champs() {
     const [data, setData] = useState([])
     useEffect( () =>{
@@ -21,8 +22,12 @@ function Champs() {
                         <p>{data.name}</p>
                         <p>{data.synergy}</p>
                         <p>{data.cost}</p>
-                        <p>{data.icon}</p>
-                    </div>
+                        <div>
+                            <img class="circle-img" 
+                            src={require(`./champs/${data.icon}`)} 
+                            alt={data.name}/>
+                        </div>
+                        </div>
                 ))
             }
         </div>
