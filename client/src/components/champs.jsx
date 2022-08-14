@@ -12,24 +12,27 @@ function Champs() {
         }
         loadData();
     }, []);
+    
 
     
     return(
+        <div class="a">
         <div id='champ-box'>
+        <div class="grid-box" >
             {
                 data.map(data =>(
-                    <div>
-                        <p>{data.name}</p>
-                        <p>{data.synergy}</p>
-                        <p>{data.cost}</p>
+                    <div class="champ">
                         <div>
                             <img class="circle-img" 
                             src={require(`./champs/${data.icon}`)} 
                             alt={data.name}/>
                         </div>
-                        </div>
+                        <p class="champ-name">{data.name}</p>
+                    </div>
                 ))
             }
+        </div>
+        </div>
         </div>
     );
 }
