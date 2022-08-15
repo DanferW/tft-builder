@@ -1,7 +1,7 @@
 import './App.css';
 import Hexagon from './components/hexagons.jsx';
 import Heading from './components/heading.jsx';
-import Champs from './components/champs.jsx';
+import BottomBox from './components/BottonBox.jsx';
 
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
     <div>
     <Heading />
     <Hexagon />
-    <Champs />
+    <BottomBox />
     
     
     </div>

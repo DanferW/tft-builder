@@ -16,7 +16,7 @@ function Champs() {
 
     
     return(
-        <div class="a">
+        
         <div id='champ-box'>
         <div class="grid-box" >
             {
@@ -33,7 +33,7 @@ function Champs() {
             }
         </div>
         </div>
-        </div>
+        
     );
 }
 
