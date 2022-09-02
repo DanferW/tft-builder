@@ -1,5 +1,5 @@
 import '../App.css';
-import Champs from "./champs";
+import {Champs} from "./champs";
 import NavChamp from "./NavChamp";
 
 
@@ -21,6 +21,9 @@ function BottomBox() {
             scrollbarColor: '#66689f transparent',
             }}>
             <NavChamp />
+            <hr style={{
+            width: '95%',
+            borderColor: '#d0c0ca'}}/>
             <Champs />
         </div>
         </div>

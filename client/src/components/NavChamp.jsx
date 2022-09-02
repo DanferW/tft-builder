@@ -5,7 +5,9 @@ function NavChamp() {
         <div style={{
             width: '100%',
             display: 'flex',
-            paddingTop: '10px'
+            paddingTop: '10px',
+            paddingLeft: '5%',
+            
         }}>
             <div id='search-button'>
                 <span>
@@ -23,6 +25,7 @@ function NavChamp() {
                     border: 'none',
                     marginLeft: '2px'
                 }}/>
+                
             </div>
         </div>
     );

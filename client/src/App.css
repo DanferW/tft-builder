@@ -27,7 +27,7 @@ div #hex-box{
   border: 1px solid #31087B;
   margin: 20px 0 20px 0;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 
 div #head-box{
@@ -44,45 +44,21 @@ div #head-box{
   height: 120px;
   position: relative;
   right: 60px;
+  margin-bottom: -25px;
 }
 .hexagon{
-  margin-left: 60px;
   position: relative;
-  background-color: #31087B;
-  width: 60px;
-  height: 100px;
   transform: rotate(90deg);
+  
 }
   
-  .hexagon::before{
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: -30px;
-    width: 0;
-    height: 0;
-    border-right: 30px solid #31087B;
-    border-top: 50px solid transparent;
-    border-bottom: 50px solid transparent;
-  }
-
-  .hexagon::after{
-    content: '';
-    position: absolute;
-    top: 0px;
-    right: -30px;
-    width: 0;
-    height: 0;
-    border-left: 30px solid #31087B;
-    border-top: 50px solid transparent;
-    border-bottom: 50px solid transparent;
-  }
   #pair{
-    margin-left: 120px;
+    margin-left: 100px;
   }
 
   .circle-img {
   display: block;
+  border: #d0c0ca solid 2px;
   width: 65px;
   height: 65px;
   border-radius: 50%;
